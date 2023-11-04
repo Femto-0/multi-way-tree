@@ -49,4 +49,32 @@ public class Node {
 
         return Math.max(getHeight(node.left), getHeight(node.right)) + 1;
     }
+    public void preOrder(){
+        System.out.println(data);
+        if(left!=null){
+            left.preOrder();
+        }
+        if(right!=null){
+
+            right.preOrder();
+        }
+    }
+    public void inOrder(){
+        if(left!=null){
+            left.inOrder();
+        }
+        System.out.println(data);
+        if(right!=null){
+            right.inOrder();
+        }
+    }
+    public void postInorder(){
+        if(left!=null){
+            left.postInorder();
+        }
+        if(right!=null){
+            right.postInorder();
+        }
+        System.out.println(data);
+    }
 }
