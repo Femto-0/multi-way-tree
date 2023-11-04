@@ -1,5 +1,4 @@
 public class Node {
-    int height=0;
     Node left;
     Node right;
     int data;
@@ -42,11 +41,12 @@ public class Node {
         }
         return true;
     }
-    public int getHeight(Node node){
-         if(node==null){
-             return -1;
-         }
 
-        return Math.max(getHeight(node.left), getHeight(node.right))+1;
+    public int getHeight(Node node) {
+        if (node == null) {
+            return -1;
+        }
+
+        return Math.max(getHeight(node.left), getHeight(node.right)) + 1;
     }
 }
