@@ -11,7 +11,7 @@ public class MWayTree {
         node.insert(6);
         node.insert(11);
         node.insert(12);
-System.out.println(node.getHeight());
+System.out.println(node.getHeight(node)); //height of the tree from its root
     }
 }
 
